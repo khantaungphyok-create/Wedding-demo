@@ -1,0 +1,275 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Wedding | Invitation</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      background: #fbf5f0;
+      color: #59453f;
+      text-align: center;
+      line-height: 1.7;
+    }
+
+    .hero {
+      min-height: 100vh;
+      padding: 70px 20px 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background:
+        radial-gradient(ellipse at top, #fffdf8, transparent 65%),
+        linear-gradient(145deg, #f5e4df, #fbf5f0 55%, #ead8cc);
+    }
+
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-size: 12px;
+      color: #a47869;
+    }
+
+    h1 {
+      font-size: clamp(42px, 9vw, 76px);
+      font-weight: normal;
+      line-height: 1.15;
+      margin: 25px 0;
+    }
+
+    .ampersand {
+      color: #b17d70;
+      font-style: italic;
+    }
+
+    .divider {
+      width: 70px;
+      height: 1px;
+      background: #bd9585;
+      margin: 22px auto;
+    }
+
+    .date {
+      font-size: 17px;
+      letter-spacing: 2px;
+    }
+
+    .message {
+      max-width: 460px;
+      margin: 24px auto;
+      font-size: 15px;
+    }
+
+    .photo {
+      width: min(100%, 360px);
+      min-height: 220px;
+      margin: 25px auto;
+      border: 1px solid #d8b8a8;
+      border-radius: 180px 180px 12px 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 25px;
+      background: rgba(255, 255, 255, 0.4);
+      color: #99776a;
+      font-size: 14px;
+    }
+
+    .section {
+      padding: 65px 20px;
+    }
+
+    .section h2 {
+      font-size: 32px;
+      font-weight: normal;
+      margin-bottom: 15px;
+    }
+
+    .countdown {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin: 25px 0;
+    }
+
+    .time-box {
+      background: #fffaf6;
+      border: 1px solid #ead6cb;
+      border-radius: 12px;
+      padding: 15px 12px;
+      min-width: 75px;
+    }
+
+    .time-box strong {
+      display: block;
+      font-size: 27px;
+      font-weight: normal;
+    }
+
+    .time-box span {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .details {
+      max-width: 480px;
+      margin: auto;
+      padding: 30px 20px;
+      background: #fffaf6;
+      border: 1px solid #ead6cb;
+      border-radius: 16px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      background: #a47869;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-size: 14px;
+    }
+
+    footer {
+      padding: 30px 15px;
+      background: #efe0d8;
+      font-size: 13px;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="hero">
+    <p class="eyebrow">Together with our families</p>
+
+    <h1>
+      Alex<br>
+      <span class="ampersand">&</span><br>
+      Sophia
+    </h1>
+
+    <div class="divider"></div>
+
+    <p class="date">12 · 12 · 2026</p>
+
+    <div class="photo">
+      Your favourite couple photo goes here ♡
+    </div>
+
+    <p class="message">
+      With love and happiness, we invite you to celebrate
+      the beginning of our forever.
+    </p>
+
+    <a href="#details" class="button">View Invitation</a>
+  </header>
+
+  <section class="section">
+    <p class="eyebrow">The big day</p>
+    <h2>Counting Down to Forever</h2>
+
+    <div class="countdown">
+      <div class="time-box">
+        <strong id="days">0</strong>
+        <span>Days</span>
+      </div>
+
+      <div class="time-box">
+        <strong id="hours">0</strong>
+        <span>Hours</span>
+      </div>
+
+      <div class="time-box">
+        <strong id="minutes">0</strong>
+        <span>Minutes</span>
+      </div>
+
+      <div class="time-box">
+        <strong id="seconds">0</strong>
+        <span>Seconds</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="details">
+    <p class="eyebrow">You are invited</p>
+    <h2>Wedding Celebration</h2>
+
+    <div class="details">
+      <p><strong>Date</strong></p>
+      <p>Saturday, December 12, 2026</p>
+
+      <div class="divider"></div>
+
+      <p><strong>Time</strong></p>
+      <p>4:00 PM</p>
+
+      <div class="divider"></div>
+
+      <p><strong>Venue</strong></p>
+      <p>Example Wedding Hall, Yangon</p>
+
+      <a
+        class="button"
+        href="https://www.google.com/maps"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Open Google Maps
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    Made with love ♡<br>
+    Alex & Sophia · 2026
+  </footer>
+
+  <script>
+    const weddingDate = new Date(
+      "2026-12-12T16:00:00+06:30"
+    ).getTime();
+
+    function updateCountdown() {
+      const now = Date.now();
+      const difference = weddingDate - now;
+
+      if (difference <= 0) {
+        document.getElementById("days").textContent = "0";
+        document.getElementById("hours").textContent = "0";
+        document.getElementById("minutes").textContent = "0";
+        document.getElementById("seconds").textContent = "0";
+        return;
+      }
+
+      document.getElementById("days").textContent =
+        Math.floor(difference / (1000 * 60 * 60 * 24));
+
+      document.getElementById("hours").textContent =
+        Math.floor((difference / (1000 * 60 * 60)) % 24);
+
+      document.getElementById("minutes").textContent =
+        Math.floor((difference / (1000 * 60)) % 60);
+
+      document.getElementById("seconds").textContent =
+        Math.floor((difference / 1000) % 60);
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+  </script>
+</body>
+</html>
